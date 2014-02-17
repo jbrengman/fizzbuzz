@@ -19,11 +19,12 @@ def fizz_buzz_ext(n, dict):
 		s = str(n)
 	return s
 
-dictionary = {7: "Sivv", 8: "Fuzz", 9: "Bizz", 10: "Zubz", 11: "Fibz"}
+if __name__ == '__main__':
+	dictionary = {7: "Sivv", 8: "Fuzz", 9: "Bizz", 10: "Zubz", 11: "Fibz"}
 
-print('\nSimple FizzBuzz: \n')
-for x in range(25):
-	print(str(x) + ':\t' + fizz_buzz(x))
-print('\nExtended FizzBuzz: \n(replacements: ' + str(dictionary) + ')\n')
-for x in range(25):
-	print(str(x) + ':\t' + fizz_buzz_ext(x, dictionary))
+	print('\nSimple FizzBuzz: \n')
+	for x in range(25):
+		print(str(x) + ':\t' + fizz_buzz(x))
+	print('\nExtended FizzBuzz: \n(replacements: ' + str(dictionary) + ')\n')
+	for x in range(25):
+		print(str(x) + ':\t' + fizz_buzz_ext(x, dictionary))
