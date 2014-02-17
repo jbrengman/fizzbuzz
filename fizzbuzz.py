@@ -11,7 +11,7 @@ def fizz_buzz(n):
 def fizz_buzz_ext(n, dict):
 	s = ''
 	for key in dict:
-		if (n % int(key) == 0):
+		if (n % key == 0):
 			s += dict[key]
 	if (n % 3 == 0 or n % 5 == 0):
 		s = fizz_buzz(n) + s
@@ -19,7 +19,7 @@ def fizz_buzz_ext(n, dict):
 		s = str(n)
 	return s
 
-dictionary = {"7": "Sivv", "8": "Fuzz", "9": "Bizz", "10": "Zubz", "11": "Fibz"}
+dictionary = {7: "Sivv", 8: "Fuzz", 9: "Bizz", 10: "Zubz", 11: "Fibz"}
 
 print('\nSimple FizzBuzz: \n')
 for x in range(25):
