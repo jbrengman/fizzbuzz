@@ -1,0 +1,3 @@
+The function fizz_buzz(n) returns 'Fizz' if the parameter passed is divisible by 3, 'Buzz' if divisible by 5, 'FizzBuzz' if divisible by both, or returns str(n) if divisible by neither 3 nor 5.
+
+The extended fizzbuzz function fizz_buzz_ext(n, dict) accepts a dictionary as a parameter, whose keys are string representations of integers, and whose values are strings to be added to the returned string if n is divisible by the corresponding key. fizz_buzz_ext also calls the simple fizz_buzz function to check for divisibility by 3 and 5 rather than rewriting similar code into the fizz_buzz_ext function itself.
