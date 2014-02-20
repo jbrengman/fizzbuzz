@@ -4,7 +4,7 @@ def fizz_buzz(n):
 		s += 'Fizz'
 	if (n % 5 == 0):
 		s += 'Buzz'
-	if (n % 3 != 0 and n % 5 != 0):
+	if (s == '' or n == 0):
 		s = str(n)
 	return s
 
